@@ -16,6 +16,7 @@ sudo apt install cpu-checker
 sudo kvm-ok
 
 
+/var/lib/libvirt/images/
 
 
 virsh list --all
