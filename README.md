@@ -28,7 +28,12 @@ virsh start amcop-vm-01
 virsh shutdown amcop-vm-01 
 
 virsh undefine  amcop-vm-01 
-
+#get location
+sudo virsh domblklist ubuntu20.04-k8s-try-emco-67
+#get info
+sudo qemu-img info /var/lib/libvirt/images/ubuntu20.04-k8s-try-emco-67.qcow2
+#view all snapshot
+sudo virsh snapshot-list ubuntu20.04-k8s-try-emco-67
 
 
 The qemu package (quick emulator) is an application that allows you to perform hardware virtualization.
